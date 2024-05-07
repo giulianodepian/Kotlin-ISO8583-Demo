@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_app"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.pos8583.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_listMsgFragment"
+            app:destination="@id/listMsgFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_addMsgFragment"
+            app:destination="@id/addMsgFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listMsgFragment"
+        android:name="com.example.pos8583.fragments.ListMsgFragment"
+        android:label="fragment_list_msg"
+        tools:layout="@layout/fragment_list_msg" >
+        <action
+            android:id="@+id/action_listMsgFragment_to_messageFragment"
+            app:destination="@id/messageFragment" />
+        <action
+            android:id="@+id/action_listMsgFragment_to_parsedMsgFragment"
+            app:destination="@id/parsedMsgFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/messageFragment"
+        android:name="com.example.pos8583.fragments.MessageFragment"
+        android:label="fragment_message"
+        tools:layout="@layout/fragment_message" />
+    <fragment
+        android:id="@+id/addMsgFragment"
+        android:name="com.example.pos8583.fragments.AddMsgFragment"
+        android:label="fragment_add_msg"
+        tools:layout="@layout/fragment_add_msg" />
+    <fragment
+        android:id="@+id/parsedMsgFragment"
+        android:name="com.example.pos8583.fragments.ParsedMsgFragment"
+        android:label="fragment_parsed_msg"
+        tools:layout="@layout/fragment_parsed_msg" />
+</navigation>

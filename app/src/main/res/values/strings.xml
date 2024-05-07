@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">POS8583</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="amount_message">$%1$s,%2$s</string>
+</resources>
